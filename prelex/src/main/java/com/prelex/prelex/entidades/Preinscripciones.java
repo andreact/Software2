@@ -14,7 +14,6 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class Preinscripciones
 {
-
 	@Id
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@NotNull

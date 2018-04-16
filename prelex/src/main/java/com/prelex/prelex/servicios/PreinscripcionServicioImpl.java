@@ -10,8 +10,10 @@ import com.prelex.prelex.repositorios.PreinscripcionRepositorio;
 
 import java.util.LinkedList;
 
-/**
+/**Clase que implementa la interfaz PreinscripcionServicio  para luego usar los metodos
+ * de esta en la controladora
  * @author andrea
+ * @version 1.0
  */
 
 @Service
