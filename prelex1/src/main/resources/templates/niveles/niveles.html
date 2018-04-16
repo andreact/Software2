@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Niveles</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<h1> Niveles </h1>
+
+<table th:object="${niveles}" codigo="nivelesTable" border="1">
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Idioma</th>
+    </tr>
+    <tr th:each="nivel :${niveles}" th:if="${niveles.size() > 0}">
+        <td  th:text="${nivel.getCodigo()}"></td>
+        <td  th:text="${nivel.getNombre()}"></td>
+        <td  th:text="${nivel.getIdioma()}"></td>
+    </tr>
+</table>
+</body>
+</html>

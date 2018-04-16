@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Preinscripciones</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body>
+<h1> Preinscripciones </h1>
+
+<table th:object="${preinscripciones}" id="preinscripcionesTable" border="1">
+    <tr>
+        <th>Tipo Documento</th>
+        <th>Número Documento</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Telefono</th>
+    </tr>
+    <tr th:each="preinscripcion :${preinscripciones}" th:if="${preinscripciones.size() > 0}">
+        <td  th:text="${preinscripcion.getTipoId()}"></td>
+        <td  th:text="${preinscripcion.getNumeroDocumento()}"></td>
+        <td  th:text="${preinscripcion.getNombres()}"></td>
+        <td  th:text="${preinscripcion.getApellidos()}"></td>
+        <td  th:text="${preinscripcion.getTelefono()}"></td>
+    </tr>
+</table>
+</body>
+</html>
