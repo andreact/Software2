@@ -3,18 +3,20 @@
  */
 package com.prelex.prelex.servicios;
 
-import com.prelex.prelex.entidades.Preinscripcion;
+import com.prelex.prelex.entidades.Preinscripciones;
+
+import java.util.LinkedList;
 
 /**
  * @author andrea
  *
  */
 public interface PreinscripcionServicio {
-	Iterable<Preinscripcion> listaPreinscripciones();
+	LinkedList<Preinscripciones> listaPreinscripciones();
 	
-	Preinscripcion obtenerPreinscripcion(String id);
+	Preinscripciones obtenerPreinscripcion(String id);
 	
-	Preinscripcion guardarPreinscripcion(Preinscripcion p);
+	Preinscripciones guardarPreinscripcion(Preinscripciones p);
 	
 	void eliminarPreinscripcion(String id);
 

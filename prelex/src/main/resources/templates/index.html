@@ -4,7 +4,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>Bienvenido al sistema de preinscripciones</h1>
 <p th:text=" '' + ${mensaje} "></p>
-<button onclick="welcome.html">Preinscripciones</button>
+<a href="/preinscripciones">Consultar Preinscripciones </a>
+<br/>
+<a href="/preinscripcion/nuevo">Adicionar Preinscripcion</a>
+<p>Consultar una preinscripcion, la ruta es -> preinscripcion/{id}</p>
+<p>Eliminar una preinscripcion, la ruta es -> preinscripcion/eliminar/{id}</p>
+
 </body>
 </html>
