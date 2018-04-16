@@ -1,7 +1,6 @@
 package com.prelex.prelex.controladoras;
 
 import com.prelex.prelex.entidades.Estudiante;
-import com.prelex.prelex.entidades.Preinscripcion;
 import com.prelex.prelex.servicios.EstudianteServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

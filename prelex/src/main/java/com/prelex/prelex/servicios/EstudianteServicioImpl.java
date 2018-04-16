@@ -17,26 +17,22 @@ public class EstudianteServicioImpl implements EstudianteServicio{
 	
 	@Override
 	public Iterable<Estudiante> listaEstudiantes() {
-		// TODO Auto-generated method stub
-		return null;
+		return estudianteRepositorio.findAll();
 	}
 
 	@Override
 	public Estudiante obtenerEstudiantePorId(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		return estudianteRepositorio.findOne(id);
 	}
 
 	@Override
 	public Estudiante guardarEstudiante(Estudiante estudiante) {
-		// TODO Auto-generated method stub
-		return null;
+		return estudianteRepositorio.save(estudiante);
 	}
 
 	@Override
 	public void eliminarEstudiante(String id) {
-		// TODO Auto-generated method stub
-		
+		estudianteRepositorio.delete(id);
 	}
 
 }
